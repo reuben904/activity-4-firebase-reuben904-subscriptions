@@ -7,7 +7,7 @@ import EditView from '../views/EditView.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', name: 'home', component: HomeView },
+    { path: '/', redirect: '/about' },
     { path: '/about', name: 'about', component: AboutView },
     { path: '/manage', name: 'manage', component: ManageView },
     { path: '/edit/:id', name: 'edit', component: EditView, props: true }
